@@ -1,0 +1,92 @@
+{
+	"code": 200,
+	"status": "OK",
+	"data": {
+		"number": 1,
+		"name": "\u0633\u064f\u0648\u0631\u064e\u0629\u064f \u0671\u0644\u0652\u0641\u064e\u0627\u062a\u0650\u062d\u064e\u0629\u0650",
+		"englishName": "Al-Faatiha",
+		"englishNameTranslation": "The Opening",
+		"revelationType": "Meccan",
+		"numberOfAyahs": 7,
+		"ayahs": [{
+			"number": 1,
+			"text": "[[1 ~ FATIHAH AL-KITAB (PEMBUKA KITAB SUCI) Pendahuluan: Makkiyyah, 7 ayat ~ Surat al-F\u00e2tihah ini termasuk kelompok surat Makkiyyah yang turun di Mekah sebelum hijrah. Disebut al-F\u00e2tihah (pembuka), karena letaknya yang berada urutan pertama surat-surat al-Qur'\u00e2n. Surat yang pertama diturunkan secara lengkap di antara surat-surat yang ada dalam al-Qur'\u00e2n ini merupakan intisari dari seluruh kandungan al-Qur'\u00e2n yang kemudian diperinci oleh surat-surat sesudahnya. Tema-tema pokok al-Qur'\u00e2n--seperti penjelasan tawhid dan keimanan, janji dan kabar gembira bagi orang-orang Mukmin, ancaman dan peringatan bagi orang-orang kafir dan pelaku kejahatan, tentang ibadah, kisah orang-orang yang beruntung karena taat kepada Allah dan sengsara karena mengingkari-Nya--semua itu tercermin secara singkat dalam surat ini. Oleh sebab itu, surat ini juga disebut dengan nama Umm al-Kit\u00e2b (induk al-Qur'\u00e2n).]] Surat ini dimulai dengan menyebut nama Allah--satu-satunya Tuhan yang berhak disembah--Yang memiliki seluruh sifat kesempurnaan dan tersucikan dari segala bentuk kekurangan. Dialah Pemilik rahmah (sifat kasih) yang tak habis-habisnya, Yang menganugerahkan segala macam kenikmatan, baik besar maupun kecil.",
+			"numberInSurah": 1,
+			"juz": 1,
+			"manzil": 1,
+			"page": 1,
+			"ruku": 1,
+			"hizbQuarter": 1,
+			"sajda": false
+		}, {
+			"number": 2,
+			"text": "Segala puja dan puji kita persembahkan kepada Allah semata, karena Dialah Yang menciptakan dan memelihara seluruh makhluk.",
+			"numberInSurah": 2,
+			"juz": 1,
+			"manzil": 1,
+			"page": 1,
+			"ruku": 1,
+			"hizbQuarter": 1,
+			"sajda": false
+		}, {
+			"number": 3,
+			"text": "Dia adalah Pemilik dan Sumber rahmah yang tak pernah putus memberikan segala kenikmatan, baik besar maupun kecil.",
+			"numberInSurah": 3,
+			"juz": 1,
+			"manzil": 1,
+			"page": 1,
+			"ruku": 1,
+			"hizbQuarter": 1,
+			"sajda": false
+		}, {
+			"number": 4,
+			"text": "Dan Dialah Penguasa satu-satunya pada hari kiamat, hari penghitungan dan pembalasan. wewenang-Nya pada hari itu bersifat mutlak dan tidak disekutui oleh suatu apa pun.",
+			"numberInSurah": 4,
+			"juz": 1,
+			"manzil": 1,
+			"page": 1,
+			"ruku": 1,
+			"hizbQuarter": 1,
+			"sajda": false
+		}, {
+			"number": 5,
+			"text": "Hanya Engkaulah yang kami sembah dan hanya kepada Engkaulah kami memohon pertolongan.",
+			"numberInSurah": 5,
+			"juz": 1,
+			"manzil": 1,
+			"page": 1,
+			"ruku": 1,
+			"hizbQuarter": 1,
+			"sajda": false
+		}, {
+			"number": 6,
+			"text": "Kepada Engkaulah kami meminta untuk menunjuki kami jalan kebenaran, kebajikan dan membawa kepada kebahagiaan.",
+			"numberInSurah": 6,
+			"juz": 1,
+			"manzil": 1,
+			"page": 1,
+			"ruku": 1,
+			"hizbQuarter": 1,
+			"sajda": false
+		}, {
+			"number": 7,
+			"text": "Yaitu jalan para hamba-Mu yang telah Engkau beri petunjuk untuk beriman kepada-Mu dan Engkau anugerahkan hidayah dan keridaan-Mu; bukan jalan orang-orang yang Engkau murkai dan bukan pula jalan mereka yang sesat dari kebenaran dan kebajikan karena mereka tidak beriman dan mengingkari petunjuk-Mu.",
+			"numberInSurah": 7,
+			"juz": 1,
+			"manzil": 1,
+			"page": 1,
+			"ruku": 1,
+			"hizbQuarter": 1,
+			"sajda": false
+		}],
+		"edition": {
+			"identifier": "id.muntakhab",
+			"language": "id",
+			"name": "Quraish Shihab",
+			"englishName": "Muhammad Quraish Shihab et al.",
+			"format": "text",
+			"type": "translation",
+			"direction": "ltr"
+		}
+	}
+}
