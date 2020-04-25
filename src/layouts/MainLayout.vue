@@ -10,9 +10,7 @@
           aria-label="Menu"
           @click="leftDrawerOpen = !leftDrawerOpen"
         />
-
         <q-toolbar-title>
-          <span style="float: right" class="surah-title">بِسْمِ ٱللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</span>
           Al-Dig (Al-Quran Digital)
         </q-toolbar-title>
 
@@ -35,20 +33,20 @@
         default-opened
         label="Surah (114 surah)">
           <q-list v-for="item in getSurah" :key="item.nomor" bordered>
-          <q-item clickable v-ripple:orange-5>
-            <q-item-section>
-              <q-item-label>
-                <span>{{ item.nomor }} </span> : <span class="surah-title">{{ item.name }} </span>
-              </q-item-label>
-              <q-item-label>
-                <span>{{ item.nama }}</span>
-              </q-item-label>
-            </q-item-section>
-            <q-item-section side top>
-              <q-item-label caption>{{ item.ayat }} ayat </q-item-label>
-            </q-item-section>
-          </q-item>
-        </q-list>
+            <q-item clickable v-ripple:orange-5 @click.stop="surahReading(item.nomor)">
+              <q-item-section>
+                <q-item-label>
+                  <span>{{ item.nomor }} </span> : <span class="surah-title">{{ item.name }} </span>
+                </q-item-label>
+                <q-item-label>
+                  <span>{{ item.nama }}</span>
+                </q-item-label>
+              </q-item-section>
+              <q-item-section side top>
+                <q-item-label caption>{{ item.ayat }} ayat </q-item-label>
+              </q-item-section>
+            </q-item>
+          </q-list>
         </q-expansion-item>
       </q-list>
     </q-drawer>
@@ -89,6 +87,22 @@ export default {
   computed: {
     getSurah () {
       return this.$store.state.QuranModul.surah
+    }
+  },
+  methods: {
+    surahReading (surahNumber) {
+      this.$q.loadingBar.start()
+      this.$store.dispatch('QuranModul/SELECT_SURAH', { surah_number: surahNumber })
+        .then(resp => {
+          if (resp.data.code === 200) {
+            this.$q.loadingBar.stop()
+          }
+        })
+        .catch(err => {
+          console.log(err)
+          this.$q.loadingBar.stop()
+        })
+      this.$router.push({ path: `/surah-reading/${surahNumber}` })
     }
   }
 }

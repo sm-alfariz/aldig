@@ -7,5 +7,12 @@ export default {
    */
   getAllSurah () {
     return http.get('/surah')
+  },
+  /**
+   * @param data Object
+   * @returns Promise Object
+   * */
+  selectSurah (data) {
+    return http.get(`/surah/${data.surah_number}`)
   }
 }

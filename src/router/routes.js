@@ -5,7 +5,11 @@ const routes = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Index.vue') },
-      { path: '/dashboard', component: () => import('pages/Dashboard') }
+      { path: '/dashboard', component: () => import('pages/Dashboard.vue') },
+      {
+        path: '/surah-reading/:surah_number',
+        component: () => import('pages/SurahDetail.vue')
+      }
     ]
   }
 ]

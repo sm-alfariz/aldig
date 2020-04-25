@@ -5,6 +5,11 @@ export function FETCH_API_SURAH ({ commit }) {
   commit('FETCH_SURAH', staticSurat)
 }
 
+/**
+ * @param commit
+ * @returns {Promise<unknown>}
+ * @constructor
+ */
 export function FETCH_API_INTENASIONAL ({ commit }) {
   // commit('FETCH_SURAH', staticSurat)
   return new Promise((resolve, reject) => {
@@ -29,6 +34,17 @@ export function FETCH_API_INTENASIONAL ({ commit }) {
         }))
         // console.log(reformatData)
         commit('FETCH_SURAH', reformatData)
+        resolve(response)
+      })
+      .catch(error => { reject(error) })
+  })
+}
+
+export function SELECT_SURAH ({ commit }, data) {
+  return new Promise((resolve, reject) => {
+    Api.selectSurah(data)
+      .then((response) => {
+        commit('SELECT_SURAH', response.data.data)
         resolve(response)
       })
       .catch(error => { reject(error) })

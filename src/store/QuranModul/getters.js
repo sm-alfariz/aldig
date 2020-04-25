@@ -1,8 +1,7 @@
-/*
-export function someGetter (state) {
-}
-*/
-
+/**
+ * @param state
+ * @returns array map object
+ */
 export function getAllSurah (state) {
   return state.surah.map(function (item) {
     return {
@@ -10,4 +9,8 @@ export function getAllSurah (state) {
       text: origin.text
     }
   })
+}
+
+export function getSelectedSurah (state) {
+  return state.selectSurah
 }

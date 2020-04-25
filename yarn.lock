@@ -6636,6 +6636,11 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
+numeral-systems@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/numeral-systems/-/numeral-systems-2.0.0.tgz#fb0bdc213f175e974d5553eab9917dc8308edf5f"
+  integrity sha512-KPbJBtaH/rQyxGpFipQyuUVMJbhMusvGH1soEbNHgMMhnxUWDEuepv1Jw7nYHDOEJ4GBY3xYnRE15p2nXBe11A==
+
 oauth-sign@~0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/oauth-sign/-/oauth-sign-0.9.0.tgz#47a7b016baa68b5fa0ecf3dee08a85c679ac6455"
@@ -7711,6 +7716,13 @@ qs@~6.5.2:
   version "6.5.2"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
   integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
+
+quasar-app-extension-ide-helper@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/quasar-app-extension-ide-helper/-/quasar-app-extension-ide-helper-1.0.0.tgz#597647b9602739e99f8aefde8f487eddcb772762"
+  integrity sha512-N5iwCnBQCiNeVLN3IbcaIQAFaTouZdSsUp2xsDSHVzW3P++B2HasuLUykVFCFW6NlmLdvLLH7qFeGS6/2iSCAg==
+  dependencies:
+    xml-escape "^1.1.0"
 
 quasar@^1.0.0:
   version "1.9.15"
@@ -10019,6 +10031,11 @@ ws@^6.0.0, ws@^6.2.1:
   integrity sha512-GIyAXC2cB7LjvpgMt9EKS2ldqr0MTrORaleiOno6TweZ6r3TKtoFQWay/2PceJ3RuBasOHzXNn5Lrw1X0bEjqA==
   dependencies:
     async-limiter "~1.0.0"
+
+xml-escape@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/xml-escape/-/xml-escape-1.1.0.tgz#3904c143fa8eb3a0030ec646d2902a2f1b706c44"
+  integrity sha1-OQTBQ/qOs6ADDsZG0pAqLxtwbEQ=
 
 xmlbuilder@^9.0.7:
   version "9.0.7"
