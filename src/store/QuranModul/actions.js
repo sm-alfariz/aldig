@@ -42,8 +42,10 @@ export function FETCH_API_INTENASIONAL ({ commit }) {
 
 export function SELECT_SURAH ({ commit }, data) {
   return new Promise((resolve, reject) => {
+    // cek dulu sudah ada belum data surah terseub
     Api.selectSurah(data)
       .then((response) => {
+        commit('setLastSurah', response.data.data.number)
         commit('SELECT_SURAH', response.data.data)
         resolve(response)
       })
