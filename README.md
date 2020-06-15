@@ -1,4 +1,5 @@
 # Aldig Al Quran Digital (source ayah from Indonesian Islam Government organzation)
+![alt text](https://github.com/sm-alfariz/aldig/blob/master/screen-shoot/photo_2020-06-15_20-06-54.jpg?raw=true)
 
 using their standar font LpmqKemenag
 
