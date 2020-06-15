@@ -1,8 +1,8 @@
 {
-  "name": "quasar-electron-vue",
+  "name": "qurann-digital-project",
   "version": "0.0.1",
-  "description": "A Quasar Framework app",
-  "productName": "Quasar App",
+  "description": "Al-Dig, Al - Qura'an Digital",
+  "productName": "Al-Dig, Al - Qura'an Digital",
   "cordovaId": "",
   "capacitorId": "",
   "author": "Efendi Hariyadi <samman.alfariz@gmail.com>",
@@ -31,7 +31,9 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^6.1.2"
+    "eslint-plugin-vue": "^6.1.2",
+    "numeral-systems": "^2.0.0",
+    "quasar-app-extension-ide-helper": "^1.0.0"
   },
   "engines": {
     "node": ">= 10.18.1",
