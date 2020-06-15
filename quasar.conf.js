@@ -14,8 +14,8 @@ module.exports = function (/* ctx */) {
     // --> boot files are part of "main.js"
     // https://quasar.dev/quasar-cli/cli-documentation/boot-files
     boot: [
-
-      'i18n',
+      'CustomUtils',
+      // 'i18n',
       'axios'
     ],
 
@@ -57,7 +57,7 @@ module.exports = function (/* ctx */) {
 
       // Quasar plugins
       plugins: [
-        'Meta'
+        'Meta', 'LoadingBar'
       ]
     },
 
@@ -69,7 +69,7 @@ module.exports = function (/* ctx */) {
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
     build: {
-      vueRouterMode: 'hash', // available values: 'hash', 'history'
+      vueRouterMode: 'history', // available values: 'hash', 'history'
 
       // rtl: false, // https://quasar.dev/options/rtl-support
       // showProgress: false,
@@ -121,9 +121,9 @@ module.exports = function (/* ctx */) {
       workboxPluginMode: 'GenerateSW', // 'GenerateSW' or 'InjectManifest'
       workboxOptions: {}, // only for GenerateSW
       manifest: {
-        name: 'Quasar App',
-        short_name: 'Quasar App',
-        description: 'A Quasar Framework app',
+        name: 'Al - Quraan Digital',
+        short_name: 'Al-Dig',
+        description: 'Al - Quraan Digital',
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
