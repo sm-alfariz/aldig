@@ -1,4 +1,8 @@
-# Quasar App (quasar-electron-vue)
+# Aldig Al Quran Digital (source ayah from Indonesian Islam Government organzation)
+
+using their standar font LpmqKemenag
+
+## AIm use Quasar App (quasar-electron-vue)
 
 A Quasar Framework app
 

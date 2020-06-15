@@ -1,6 +1,10 @@
 import { staticSurat } from 'http/json_db'
 import Api from 'http/request/Api'
 
+function jsonSurahLoader (surahNumber) {
+  return require(`assets/surah_json/${surahNumber}.json`)
+}
+
 export function FETCH_API_SURAH ({ commit }) {
   commit('FETCH_SURAH', staticSurat)
 }
@@ -40,12 +44,15 @@ export function FETCH_API_INTENASIONAL ({ commit }) {
   })
 }
 
+export function SELECT_SURAH_JSON ({ commit }, data) {
+  commit('filldDataSurah', jsonSurahLoader(data.surah_number)[data.surah_number])
+}
+
 export function SELECT_SURAH ({ commit }, data) {
   return new Promise((resolve, reject) => {
     // cek dulu sudah ada belum data surah terseub
     Api.selectSurah(data)
       .then((response) => {
-        commit('setLastSurah', response.data.data.number)
         commit('SELECT_SURAH', response.data.data)
         resolve(response)
       })

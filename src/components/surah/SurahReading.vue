@@ -18,18 +18,19 @@
       </q-card>
     </div>
     <div class="wrap col-12" style="">
-      <q-list v-for="item in surahData.ayahs" :key="item.numberInSurah" bordered>
+      <q-list v-for="item in surahData.ayat" :key="item.no" bordered>
         <q-item>
           <q-item-section>
             <q-item-label>
-              <span>{{ item.numberInSurah }} </span>
-              <span style="float: right; direction: rtl" class="text-h5">
-                    {{ (item.numberInSurah === 1 && item.number !== 1 ? item.text.substr(39) : item.text) }}
+              <span>{{ item.no }} </span>
+              <span style="float: right; direction: rtl" class="text-h5 surah-text">
+                    {{ item.text }}
                       <q-avatar  size="24px" color="orange" text-color="black">
-                        {{ $StringUtils.numberToArabic(item.numberInSurah) }}
+                        {{ $StringUtils.numberToArabic(item.no) }}
                       </q-avatar>
                   </span>
             </q-item-label>
+            <q-item-label style="font-size: 12pt" class="text-dark" caption>{{ item.translaet_id }}</q-item-label>
           </q-item-section>
         </q-item>
       </q-list>
@@ -41,7 +42,7 @@
 export default {
   name: 'SurahReadingComp',
   props: {
-    surahNumber: {
+    surahData: {
       required: true
     },
     surahName: {
@@ -49,9 +50,14 @@ export default {
       required: true,
       default: ''
     },
-    surahData: {
+    surahNumber: {
       required: true
     }
+  },
+  computed: {
+  },
+  created () {
+    // console.log(this.$route.name)
   },
   methods: {
   }
@@ -61,7 +67,8 @@ export default {
   .surah-title {
     direction: rtl;
     font-size: 35px;
-    font-family: 'me_quran',serif;
+    font-family: 'LpmqKemenag',serif;
     line-height: 1px;
   }
+
 </style>
